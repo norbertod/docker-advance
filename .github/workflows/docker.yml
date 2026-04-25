@@ -17,7 +17,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build docker image
       run: | 
-        docker build --platform linux --tag norber/websitenorber:latest -f /Dockerfile .
+        docker build --platform linux --tag norber/websitenorber:latest -f Dockerfile .
     - name: Publish docker image
       run: |
         docker push aminespinoza/websiteplatzi:latest
